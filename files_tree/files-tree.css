@@ -10,6 +10,7 @@
 .files-tree {
     padding: 0;
     margin: 0;
+    padding-left: 10px;
 }
 
 .files-tree,
@@ -28,8 +29,8 @@
     padding: 5px 4px;
 }
 
-.files-tree-li-with-sublist {
-    /*margin-left: -18px;*/
+.files-tree-li-folder {
+    margin-left: -18px;
 }
 
 .files-tree label {
