@@ -1,0 +1,62 @@
+/* -------------------------- */
+/* DEMO */
+/* -------------------------- */
+body {
+    background: #eee;
+    padding: 20px;
+    height: calc(100vh - 40px);
+    display: flex;
+    flex-direction: column;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    flex: 1;
+}
+
+#show {
+    margin: 20px 0;
+    align-self: flex-start;
+}
+
+.folder-list1,
+.folder-list2,
+.folder-list3 {
+    background: #fff;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.folder-list1 {
+    --color: 35, 194, 255;
+}
+.folder-list2 {
+    --color: 21,219,111;
+}
+.folder-list3 {
+    --color: 250,80,44;
+}
+
+div[class*="folder-list"] {
+    position: relative;
+    overflow: hidden;
+}
+div[class*="folder-list"]::before {
+    content: "";
+    width: 16px;
+    height:16px;
+    background: rgb(var(--color));
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+
+
+
+
+
+
